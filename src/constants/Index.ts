@@ -1,6 +1,4 @@
 import { CodeXml, CopyCheck, Layers, LayoutTemplate, Smartphone, SwatchBook } from "lucide-react";
-import type { TeamMember } from '../types/types';
-import type { BlogItem } from '../types/types';
 
 // Features
 
@@ -38,43 +36,6 @@ const FEATURES = [
 ];
 
 
-// Blog Items
-const BlogItems: BlogItem [] = [
-  { id: 1, title: 'GSAP ScrollTrigger Magic', date: 'October 26, 2023', imageUrl: './images/card-5.png' },
-  { id: 2, title: 'GSAP ScrollTrigger Magic', date: 'October 26, 2023', imageUrl: './images/card-2.png' },
-  { id: 3, title: 'GSAP ScrollTrigger', date: 'October 26, 2023', imageUrl: './images/card-6.png' },
-  { id: 4, title: 'SSAP Lmeat Mostion', date: 'October 26, 2023', imageUrl: './images/card-4.png' },
-  { id: 5, title: 'GSAP ScrollTrigger Magic', date: 'October 26, 2023', imageUrl: './images/card-2.png', isNew: true },
-  { id: 6, title: 'Advanced Animation Hooks', date: 'October 25, 2023', imageUrl: './images/card-2.png' },
-];
-
-// aAbout items
-
-const TeamMembers: TeamMember[] = [
-  {
-    id: 1,
-    name: 'Card Inso',
-    role: 'Creator Manlin',
-    imageUrl: 'https://picsum.photos/seed/man1/200/200',
-  },
-  {
-    id: 2,
-    name: 'Can Mger',
-    role: 'Velira Niker',
-    imageUrl: 'https://picsum.photos/seed/man2/200/200',
-  },
-  {
-    id: 3,
-    name: 'DaoS Caled',
-    role: 'Franer Muslen',
-    imageUrl: 'https://picsum.photos/seed/man3/200/200',
-  },
-];
-
-
-
 export {
-  BlogItems,
   FEATURES,
-  TeamMembers
 }
