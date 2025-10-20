@@ -285,7 +285,7 @@ export default function GsapHero({ className = "" }: Props) {
             })
             .to({}, { duration: 0.5 });
 
-          floatTweens.current.push(blobTl);
+          floatTweens.current.push();
         }
 
         // animation for second svg
@@ -312,7 +312,7 @@ export default function GsapHero({ className = "" }: Props) {
               ease: "power2.inOut",
             });
 
-          floatTweens.current.push(sparkTl);
+          floatTweens.current.push();
         }
 
         // animation for third svg

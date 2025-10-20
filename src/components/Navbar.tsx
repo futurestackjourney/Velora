@@ -1,10 +1,8 @@
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-import { useAuth } from "../context/AuthContext";
 import { Menu, X } from "lucide-react";
 
 const Navbar: React.FC = () => {
-  const { isAuthenticated, logout } = useAuth();
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => setIsOpen(!isOpen);
@@ -104,35 +102,6 @@ const Navbar: React.FC = () => {
 
           {/* Right Side (Buttons + Theme) */}
           <div className="flex items-center space-x-3">
-            {isAuthenticated ? (
-              <button
-                onClick={() => {
-                  logout();
-                  closeMenu();
-                }}
-                className="text-sm font-medium text-gray-300 hover:text-indigo-500"
-              >
-                Logout
-              </button>
-            ) : (
-              <>
-                <Link
-                  to="/login"
-                  onClick={closeMenu}
-                  className="text-sm font-medium text-gray-300 hover:text-indigo-500"
-                >
-                  Login
-                </Link>
-                <Link
-                  to="/signup"
-                  onClick={closeMenu}
-                  className="hidden sm:inline-flex items-center justify-center px-4 py-2 text-sm font-medium text-white bg-blue border border-transparent rounded-md shadow-sm hover:bg-cyan focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-                >
-                  Sign Up
-                </Link>
-              </>
-            )}
-
             {/* Mobile Menu Button */}
             <button
               onClick={toggleMenu}
