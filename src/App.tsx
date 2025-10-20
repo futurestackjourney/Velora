@@ -20,12 +20,12 @@ const App = () => {
       {/* Public Routes  */}
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/docs" element={<DocsPage />} />
+        {/* <Route path="/docs" element={<DocsPage />} />
         <Route path="/features" element={<Features />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/about" element={<About />} />
         <Route path="/demos" element={<Demos/>}/>
-        <Route path="/playground" element={<Playground/>} />
+        <Route path="/playground" element={<Playground/>} /> */}
 
         {/* Auth Routes */}
         <Route path="/login" element={<Login />} />
